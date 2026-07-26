@@ -797,6 +797,16 @@
 		)
 		(uuid "a76c73b3-6d53-45b8-acae-5e94f84950dc")
 	)
+	(wire
+		(pts
+			(xy 35.56 31.75) (xy 35.56 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f672264c-5d10-427a-bf7a-ff6dfa2cb82e")
+	)
 	(symbol
 		(lib_id "74xGxx:74AHC1G86")
 		(at 73.66 90.17 0)
