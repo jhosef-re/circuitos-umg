@@ -370,6 +370,95 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74AHC1G86")
+		(at 74.93 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "805a0fed-6f17-4051-81e7-a6c4d7d7f49f")
+		(property "Reference" "U4"
+			(at 87.63 110.4198 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74AHC1G86"
+			(at 87.63 112.9598 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+			(at 74.93 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single XOR Gate, Low-Voltage CMOS"
+			(at 74.93 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "28308396-d00c-454c-9017-e49064053d61")
+		)
+		(pin "2"
+			(uuid "ca0d3df4-b571-489a-82f3-7a09b581b95f")
+		)
+		(pin "5"
+			(uuid "245fc013-26b9-474f-8bbd-bc7f3efb2c0f")
+		)
+		(pin "3"
+			(uuid "9b9d01d4-e41e-4860-929c-55c2a4d94f9b")
+		)
+		(pin "4"
+			(uuid "446bd3ff-3b43-4995-805d-9ee7ce35bd2b")
+		)
+		(instances
+			(project "sumador_2bits"
+				(path "/303a9efc-308b-44c2-8b7b-14e4b7464ca1"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74AHC1G86")
 		(at 73.66 63.5 0)
 		(unit 1)
 		(body_style 1)
