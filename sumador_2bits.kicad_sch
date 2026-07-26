@@ -1478,7 +1478,7 @@
 		)
 		(uuid "f672264c-5d10-427a-bf7a-ff6dfa2cb82e")
 	)
-	(label "Led"
+	(label "F0"
 		(at 109.22 45.72 0)
 		(effects
 			(font
