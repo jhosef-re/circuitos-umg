@@ -741,6 +741,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "X	Y	W	Z"
+		(exclude_from_sim no)
+		(at 32.766 27.178 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "19eeff3a-36c9-4f62-83ed-fd68016394b9")
+	)
 	(junction
 		(at 25.4 60.96)
 		(diameter 0)
