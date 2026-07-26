@@ -925,6 +925,95 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "74xGxx:74AHC1G08")
+		(at 139.7 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5566917-9c22-473a-9d45-8c2bf41be4d2")
+		(property "Reference" "U7"
+			(at 152.4 118.0398 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74AHC1G08"
+			(at 152.4 120.5798 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+			(at 139.7 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single AND Gate, Low-Voltage CMOS"
+			(at 139.7 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "6a397f94-ea8f-4c5a-9ec0-b6b3b52ff61a")
+		)
+		(pin "3"
+			(uuid "d598f3fd-b2a1-43ae-a530-7a4666580e05")
+		)
+		(pin "5"
+			(uuid "55016dcd-3369-47fc-97fd-9301338b093f")
+		)
+		(pin "2"
+			(uuid "2c4cbbe9-0f45-483a-8589-d56aaf54a5b4")
+		)
+		(pin "1"
+			(uuid "4fee8261-ead2-4810-b1a5-ae1377868222")
+		)
+		(instances
+			(project "sumador_2bits"
+				(path "/303a9efc-308b-44c2-8b7b-14e4b7464ca1"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
