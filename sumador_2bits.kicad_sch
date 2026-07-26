@@ -1478,6 +1478,16 @@
 		)
 		(uuid "f672264c-5d10-427a-bf7a-ff6dfa2cb82e")
 	)
+	(label "Led"
+		(at 109.22 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "008164d4-a710-45c7-8dd6-d33c673ee6f4")
+	)
 	(symbol
 		(lib_id "74xGxx:74AHC1G86")
 		(at 73.66 90.17 0)
