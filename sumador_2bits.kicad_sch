@@ -1479,7 +1479,7 @@
 		(uuid "f672264c-5d10-427a-bf7a-ff6dfa2cb82e")
 	)
 	(label "F0"
-		(at 109.22 45.72 0)
+		(at 81.28 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
