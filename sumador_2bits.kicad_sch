@@ -827,6 +827,238 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC86")
+		(at 111.76 129.54 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0387d0c1-06dd-46bf-9e53-519ce62f3853")
+		(property "Reference" "U1"
+			(at 111.4552 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC86"
+			(at 111.4552 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74HC86"
+			(at 111.76 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Quad 2-input XOR"
+			(at 111.76 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "229c5029-0582-460d-a152-0de1862366d6")
+		)
+		(pin "1"
+			(uuid "edfe6394-e9f7-4c81-a26d-9e402faa51f9")
+		)
+		(pin "2"
+			(uuid "8c8535a0-f08f-4ca0-a2d9-fa5a55b234ab")
+		)
+		(pin "3"
+			(uuid "6ff5ec1b-fe4b-4de8-acda-7c1e4bed400b")
+		)
+		(pin "5"
+			(uuid "73c9ce69-482d-4326-aac7-d8de4d79ed66")
+		)
+		(pin "6"
+			(uuid "3b6e2252-c66f-4955-a37e-cca765a028a5")
+		)
+		(pin "8"
+			(uuid "392bf9bc-f7b0-47de-8241-f3a67865206f")
+		)
+		(pin "9"
+			(uuid "4ed4ae20-e346-4215-90b9-78fe6d3ffd16")
+		)
+		(pin "10"
+			(uuid "72907d4c-b215-42e0-8d95-a05e42c74115")
+		)
+		(pin "11"
+			(uuid "14166b28-afe2-499c-add5-aafad95569e0")
+		)
+		(pin "12"
+			(uuid "c174ff61-713f-43ac-888a-a0a8898c054a")
+		)
+		(pin "13"
+			(uuid "0ff30699-e116-41a5-ae83-d255b5aba90a")
+		)
+		(pin "7"
+			(uuid "3754f5de-2288-41b7-8a60-5d61a0cffd29")
+		)
+		(pin "14"
+			(uuid "2aff6a86-acf0-470f-9be8-14d74b94b269")
+		)
+		(instances
+			(project "sumador_2bits"
+				(path "/303a9efc-308b-44c2-8b7b-14e4b7464ca1"
+					(reference "U1")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC86")
+		(at 115.57 115.57 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09bb6d02-2fe5-4dbb-b19f-19de6985621f")
+		(property "Reference" "U1"
+			(at 115.2652 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC86"
+			(at 115.2652 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74HC86"
+			(at 115.57 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Quad 2-input XOR"
+			(at 115.57 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "229c5029-0582-460d-a152-0de1862366d6")
+		)
+		(pin "1"
+			(uuid "edfe6394-e9f7-4c81-a26d-9e402faa51f9")
+		)
+		(pin "2"
+			(uuid "8c8535a0-f08f-4ca0-a2d9-fa5a55b234ab")
+		)
+		(pin "3"
+			(uuid "6ff5ec1b-fe4b-4de8-acda-7c1e4bed400b")
+		)
+		(pin "5"
+			(uuid "73c9ce69-482d-4326-aac7-d8de4d79ed66")
+		)
+		(pin "6"
+			(uuid "3b6e2252-c66f-4955-a37e-cca765a028a5")
+		)
+		(pin "8"
+			(uuid "392bf9bc-f7b0-47de-8241-f3a67865206f")
+		)
+		(pin "9"
+			(uuid "4ed4ae20-e346-4215-90b9-78fe6d3ffd16")
+		)
+		(pin "10"
+			(uuid "72907d4c-b215-42e0-8d95-a05e42c74115")
+		)
+		(pin "11"
+			(uuid "14166b28-afe2-499c-add5-aafad95569e0")
+		)
+		(pin "12"
+			(uuid "c174ff61-713f-43ac-888a-a0a8898c054a")
+		)
+		(pin "13"
+			(uuid "0ff30699-e116-41a5-ae83-d255b5aba90a")
+		)
+		(pin "7"
+			(uuid "3754f5de-2288-41b7-8a60-5d61a0cffd29")
+		)
+		(pin "14"
+			(uuid "2aff6a86-acf0-470f-9be8-14d74b94b269")
+		)
+		(instances
+			(project "sumador_2bits"
+				(path "/303a9efc-308b-44c2-8b7b-14e4b7464ca1"
+					(reference "U1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC86")
 		(at 96.52 78.74 0)
 		(unit 1)
 		(body_style 1)
