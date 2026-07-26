@@ -921,7 +921,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74AHC1G08")
-		(at 137.16 90.17 0)
+		(at 156.21 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -932,7 +932,7 @@
 		(fields_autoplaced yes)
 		(uuid "573618c7-fdb2-4f92-a214-e1a11e500d20")
 		(property "Reference" "U6"
-			(at 149.86 83.7498 0)
+			(at 168.91 73.5898 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -942,7 +942,7 @@
 			)
 		)
 		(property "Value" "74AHC1G08"
-			(at 149.86 86.2898 0)
+			(at 168.91 76.1298 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -952,7 +952,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 90.17 0)
+			(at 156.21 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -963,7 +963,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 137.16 90.17 0)
+			(at 156.21 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -974,7 +974,7 @@
 			)
 		)
 		(property "Description" "Single AND Gate, Low-Voltage CMOS"
-			(at 137.16 90.17 0)
+			(at 156.21 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1099,7 +1099,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74AHC1G08")
-		(at 138.43 64.77 0)
+		(at 157.48 54.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1110,7 +1110,7 @@
 		(fields_autoplaced yes)
 		(uuid "b86fb622-ba63-457a-9234-2b1504a33d60")
 		(property "Reference" "U5"
-			(at 151.13 58.3498 0)
+			(at 170.18 48.1898 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1120,7 +1120,7 @@
 			)
 		)
 		(property "Value" "74AHC1G08"
-			(at 151.13 60.8898 0)
+			(at 170.18 50.7298 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1130,7 +1130,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 64.77 0)
+			(at 157.48 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1141,7 +1141,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 138.43 64.77 0)
+			(at 157.48 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1152,7 +1152,7 @@
 			)
 		)
 		(property "Description" "Single AND Gate, Low-Voltage CMOS"
-			(at 138.43 64.77 0)
+			(at 157.48 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1277,7 +1277,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74AHC1G08")
-		(at 139.7 124.46 0)
+		(at 158.75 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1288,7 +1288,7 @@
 		(fields_autoplaced yes)
 		(uuid "c5566917-9c22-473a-9d45-8c2bf41be4d2")
 		(property "Reference" "U7"
-			(at 152.4 118.0398 0)
+			(at 171.45 107.8798 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1298,7 +1298,7 @@
 			)
 		)
 		(property "Value" "74AHC1G08"
-			(at 152.4 120.5798 0)
+			(at 171.45 110.4198 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1308,7 +1308,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 124.46 0)
+			(at 158.75 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1319,7 +1319,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 139.7 124.46 0)
+			(at 158.75 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1330,7 +1330,7 @@
 			)
 		)
 		(property "Description" "Single AND Gate, Low-Voltage CMOS"
-			(at 139.7 124.46 0)
+			(at 158.75 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
