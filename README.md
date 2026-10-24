@@ -48,15 +48,40 @@ funciona.
 | `sumador_2bits/sumador_2bits.kicad_sch` | Esquematico del sumador de 2 bits (texto plano, diff legible) |
 | `sumador_2bits/sumador_2bits.kicad_pcb` | Layout de PCB |
 | `sumador_2bits/sumador_2bits.kicad_pro` | Preferencias del proyecto |
-| `sumador_2bits.cir` | Netlist SPICE equivalente del sumador de 2 bits (compatible con Multisim) |
+| `sumador_2bits.cir` | Netlist SPICE del sumador de 1 bit (Half Adder simple, compatible con Multisim) |
+| `sumador_2bits_cascada_TTL.cir` | ⭐ Netlist SPICE del sumador de 2 bits con Half Adder + Full Adder en cascada y subcircuitos TTL 74LS |
 
-El esquema del sumador de 2 bits:
+### Sumador de 1 bit (`sumador_2bits.cir`)
+
+Half Adder simple:
 
 - **Entradas:** X, Y
 - **Salidas:** F0 = suma (X XOR Y), F1 = acarreo (X AND Y)
 - Alimentacion: VCC = 5V, VEE = GND
 - Estimulo PWL con periodo de 40 ms por entrada
 - Analisis transitorio: `.TRAN 1m 80m 0 1m`
+
+### Sumador de 2 bits en cascada (`sumador_2bits_cascada_TTL.cir`)
+
+**Es un diseño distinto, mas avanzado que el de arriba.** No es una version del
+anterior: implementa un sumador completo de 2 bits con acarreo encadenado.
+
+- **Entradas:** A0 B0 A1 B1
+- **Salidas:** S0 S1 COUT
+- **Etapa 1:** Half Adder sobre el bit 0 → S0, C0
+- **Etapa 2:** Full Adder sobre el bit 1 → S1, COUT
+  - Suma parcial N1 = A1 XOR B1
+  - S1 = (A1 XOR B1) XOR C0
+  - COUT = (A1 AND B1) OR ((A1 XOR B1) AND C0)
+- **Subcircuitos TTL reales (serie 74LS):**
+  - `SUB_XOR2` → 7486
+  - `SUB_AND2` → 7408
+  - `SUB_OR2` → 7432
+- Estimulo: 4 fuentes `PULSE` (10 ms / 20 ms / 40 ms / 80 ms)
+- Analisis transitorio: `.TRAN 1m 160m`
+
+> El netlist del repo `kicad/sumador_2bits/` (KiCad) corresponde al circuito de
+> **1 bit** de esta misma seccion.
 
 ### KiCad Local History
 
@@ -97,11 +122,35 @@ git diff Save_sch_1 Last_Save_sch -- sumador_2bits.kicad_sch
 
 ---
 
+## 📄 `docs/`
+
+| Archivo | Descripcion |
+|---|---|
+| `Monitoreo_Medicamentos_Contexto.md` | Contexto completo del proyecto **Monitoreo de Medicamentos** (Electronica Digital) |
+| `kicad-local-history/` | Historial de diseno de KiCad (37 autosaves + 2 tags) |
+
+### `Monitoreo_Medicamentos_Contexto.md`
+
+Documenta el proyecto grupal de Electronica Digital (UMG, sede El Naranjo):
+
+- **Modalidad:** 100% simulado en Proteus 8, no se arma nada fisico
+- **Tema:** Monitoreo de Medication (elegido porque los sistemas de seguridad no fueron aprobados)
+- **Reloj DS1307** para la hora; el LCD muestra la hora actual y la proxima dosis (08:00, 14:00, 20:00)
+- **Confirmacion:** al llegar la hora se presiona el boton, se enciende el LED verde y el LCD confirma la toma
+- **Alerta por no toma:** LED rojo + buzzer parpadean; si pasan 10 minutos sin confirmar quedan fijos y el LCD muestra `DOSIS OMITIDA!`
+- LEDs: `LED-RED` (D10) para la alerta, `LED-GREEN` (D11) para la confirmacion, ambos con 220 Ω
+
+El diseno correspondiente esta en `proteus/Monitoreo_Medicamentos.pdsprj`. Antes de este
+archivo, el proyecto solo existia como `.pdsprj` binario, sin explicacion del
+contexto, los requisitos ni la interfaz.
+
+---
+
 ## Requisitos
 
 - **Proteus 8.x** (o superior) para los `.pdsprj`
 - **KiCad 9.x** para los `.kicad_sch` / `.kicad_pcb`
-- **Multisim** para el netlist SPICE `.cir`
+- **Multisim** para los netlists SPICE `.cir`
 
 ---
 
