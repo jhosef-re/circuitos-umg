@@ -76,6 +76,13 @@ git log --oneline --all
 git show Last_Save_sch:sumador_2bits.kicad_sch   # ver una version concreta
 ```
 
+Los tags `Last_Save_sch` y `Save_sch_1` tambien estan disponibles:
+
+```bash
+git tag -l
+git diff Save_sch_1 Last_Save_sch -- sumador_2bits.kicad_sch
+```
+
 > En KiCad se ve con: **File > Local History**. La carpeta se movio, asi que
 > el menu dejara de listar estas versiones en la maquina local; para
 > recuperarlas, usa los comandos `git` de arriba.
