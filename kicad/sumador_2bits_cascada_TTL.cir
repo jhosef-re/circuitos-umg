@@ -1,0 +1,57 @@
+* ===================================================================
+* SUMADOR DE 2 BITS (Half Adder + Full Adder en cascada)
+* Netlist SPICE - Importable en Multisim (Transfer > Import Netlist)
+* Entradas: A0 B0 A1 B1
+* Salidas : S0 S1 COUT
+* ===================================================================
+
+* --- ETAPA 1: HALF ADDER (bit 0) ---
+* S0 = A0 XOR B0
+XOR1 A0 B0 S0 SUB_XOR2
+
+* C0 = A0 AND B0
+X1 A0 B0 C0 SUB_AND2
+
+* --- ETAPA 2: FULL ADDER (bit 1) ---
+* Suma parcial: A1 XOR B1
+XOR2 A1 B1 N1 SUB_XOR2
+
+* S1 = (A1 XOR B1) XOR C0
+XOR3 N1 C0 S1 SUB_XOR2
+
+* AND1 = A1 AND B1
+X2 A1 B1 N2 SUB_AND2
+
+* AND2 = (A1 XOR B1) AND C0
+X3 N1 C0 N3 SUB_AND2
+
+* COUT = AND1 OR AND2
+XOR4 N2 N3 COUT SUB_OR2
+
+* ===================================================================
+* SUBCIRCUITOS - Compuertas logicas TTL basicas (74LS series)
+* ===================================================================
+
+.SUBCKT SUB_XOR2 IN1 IN2 OUT
+U1 IN1 IN2 OUT 7486
+.ENDS SUB_XOR2
+
+.SUBCKT SUB_AND2 IN1 IN2 OUT
+U1 IN1 IN2 OUT 7408
+.ENDS SUB_AND2
+
+.SUBCKT SUB_OR2 IN1 IN2 OUT
+U1 IN1 IN2 OUT 7432
+.ENDS SUB_OR2
+
+* ===================================================================
+* Fuentes de entrada (ejemplo de prueba: A=01, B=10 -> deben cambiarse
+* manualmente en Multisim por interruptores/generadores logicos)
+* ===================================================================
+VA0 A0 0 PULSE(0 5 0 1n 1n 10m 20m)
+VB0 B0 0 PULSE(0 5 0 1n 1n 20m 40m)
+VA1 A1 0 PULSE(0 5 0 1n 1n 40m 80m)
+VB1 B1 0 PULSE(0 5 0 1n 1n 80m 160m)
+
+.TRAN 1m 160m
+.END
