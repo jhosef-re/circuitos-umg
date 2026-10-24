@@ -1,0 +1,9 @@
+# Proteus (ISIS)
+#
+# NOTA: los *.pdsprj SON los archivos de proyecto de Proteus y SI se
+# versionan (son un ZIP con el diseno dentro). Lo que se ignora son los
+# archivos de estado de la ventana (.workspace) y los backups con timestamp.
+*.pdsprj.*.workspace
+Project Backups/
+*.bak
+*.tmp

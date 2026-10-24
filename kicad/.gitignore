@@ -1,0 +1,7 @@
+# KiCad
+# Local history: snapshots automaticos de KiCad (ver docs/). Se versiona aparte
+# como subtree para conservar el historial de diseno.
+.history/
+*.kicad_prl
+*-backups/
+fp-info-cache

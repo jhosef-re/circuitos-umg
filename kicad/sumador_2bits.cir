@@ -1,0 +1,28 @@
+* Half Adder - Sumador de 2 numeros (1 bit)
+* Entradas: X, Y
+* Salidas: F0 = Suma (X XOR Y), F1 = Acarreo (X AND Y)
+* Compatible con Multisim (Importar como SPICE netlist)
+
+* --- Fuentes de alimentacion ---
+VCC VCC 0 5V
+VEE GND 0 0V
+
+* --- Estímulo de entradas (tabla de verdad) ---
+* X: 0 0 1 1  (periodo 40ms)
+VX X 0 PWL(0 0 40m 0 40.001m 5 80m 5 80.001m 0)
+* Y: 0 1 0 1  (periodo 40ms)
+VY Y 0 PWL(0 0 20m 0 20.001m 5 40m 5 40.001m 0)
+
+* --- Sumador (XOR) F0 = X ^ Y ---
+* Usando compuerta XOR digital
+AU_XOR X Y F0 VCC GND DMOD_XOR
+.MODEL DMOD_XOR d_xor(rise_delay=10n fall_delay=10n)
+
+* --- Acarreo (AND) F1 = X & Y ---
+AU_AND X Y F1 VCC GND DMOD_AND
+.MODEL DMOD_AND d_and(rise_delay=10n fall_delay=10n)
+
+* --- Análisis de transitorio ---
+.TRAN 1m 80m 0 1m
+.PROBE
+.END
